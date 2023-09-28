@@ -8,7 +8,7 @@ Ketentuan proyek :
 2. Nama file ditulis dengan format camelCase.
    Contoh : Saya berada di Malang = sayaBeradaDiMalang.
 4. Pastikan menulis commit push dengan baik dan tidak berbelit-belit.
-5. Harap menulis code dengan prinsip clean code
-6. Harap menggunakan indentasi dengan rapih
-7. Jangan menamai fungsi/define dengan asal asalan
+5. Harap menulis code dengan prinsip clean code.
+6. Harap menggunakan indentasi dengan rapih.
+7. Jangan menamai fungsi/define dengan asal asalan.
    Contoh : a = 2; (a ini apa???)
