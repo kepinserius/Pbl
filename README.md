@@ -12,3 +12,4 @@ Ketentuan proyek :
 6. Harap menggunakan indentasi dengan rapih.
 7. Jangan menamai fungsi/define dengan asal asalan.
    Contoh : a = 2; (a ini apa???)
+8. Contoh menulis commit yang baik : https://gist.github.com/robertpainsi/b632364184e70900af4ab688decf6f53#a-properly-formed-git-commit-subject-line-should-always-be-able-to-complete-the-following-sentence
