@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+.header{
+    background-color: rgb(121, 121, 212);
+    height: 40px;
+    display: flex;
+}
+.header-namelogo{
+    height: 40px;
+    display: flex;
+}
+.header-logo{
+    margin: auto 3px;
+}
+.ub-logo{
+    height: 30px;
+}
+.vokasi-logo{
+    height: 30px;
+}
+.header-name{
+    margin: auto 5px;
+    font-family:poppins;
+    font-weight: bold;
+}
+.navbar{
+    height: 40px;
+    display: flex;
+    margin-left: 750px;
+}
+ul{
+    margin: auto 10px;
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.bodies{
+    height: 250px;
+    border-bottom: 2px solid;
+}
+.bodies-newspaper{
+    height: 250px;
+    width: 650px;
+    margin: auto auto;
+     
+}
+.bodies-newspaper-images{
+    height: 250px ;
+    width: 650px;
+    margin: auto auto;
+    border-left: 2px solid;
+    border-right: 2px solid;
+}
