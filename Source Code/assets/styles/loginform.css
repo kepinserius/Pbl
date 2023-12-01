@@ -15,6 +15,11 @@ body{
     background: #5372F0;
     
 }
+
+header span{
+    color: #FFC857;
+}
+
 ::selection{
     color: #fff;
     background: #5372F0;

@@ -731,3 +731,7 @@ footer div {
     max-width: none; /* Hilangkan batasan lebar maksimum pada gambar */
   }
 }
+
+span{
+  color: #FFC857;
+}
