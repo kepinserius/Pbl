@@ -17,6 +17,11 @@ body{
     color: #fff;
     background: #5372F0;
 }
+.container-signin{
+    display: flex;
+    flex-direction: row;
+}
+ 
 .wrapper{
     width: 380px;
     padding: 40px 30px 50px 30px;

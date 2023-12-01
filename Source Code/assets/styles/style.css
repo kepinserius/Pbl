@@ -697,3 +697,37 @@ footer div {
     width: 200px;
   }
 }
+
+/* CSS untuk tata letak hero section pada layar besar */
+.container-hero {
+  display: flex;
+  margin-top: 290px;
+}
+
+.hero-img {
+  position: relative;
+}
+
+.hero-content {
+  width: 400px;
+}
+
+ 
+@media only screen and (max-width: 768px) {
+  .container-hero {
+    flex-direction: column; /* Mengubah tata letak menjadi kolom pada layar kecil */
+    align-items: center; /* Pusatkan elemen di tengah pada layar kecil */
+    margin-top: 150px; /* Sesuaikan margin atas sesuai kebutuhan */
+  }
+
+  .hero-content {
+    width: 100%; /* Gunakan lebar penuh pada layar kecil */
+    text-align: center; /* Pusatkan teks pada layar kecil */
+    margin-top: 20px;
+  }
+
+  .hero-img img {
+    width: 100%; /* Membuat gambar mengisi lebar kontainer pada layar kecil */
+    max-width: none; /* Hilangkan batasan lebar maksimum pada gambar */
+  }
+}
