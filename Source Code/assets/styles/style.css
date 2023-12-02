@@ -735,3 +735,8 @@ footer div {
 span{
   color: #FFC857;
 }
+
+th, td{
+  padding: 3px 5px;
+  border-width: 2px;
+}
