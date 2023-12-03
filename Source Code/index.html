@@ -12,40 +12,44 @@
       referrerpolicy="no-referrer" />
       <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"  rel="stylesheet" />
       <script src="https://cdn.tailwindcss.com"></script>
+      <script src="js/script.js"></script>
     <title>Selamat Datang</title>
   </head>
   <body>
-    <header class=" w-full fixed left-0 z-10">
+    <header class="w-full fixed left-0 z-10">
       <nav class="nav__container">
-        <span class="flex__row">
-          <img
-            src="assets/image/logo.svg"
-            alt="assets_logo"
-            style="padding-right: 10px" />
-          <span>SIMAPRES</span>
-        </span>
-
-        <ul style="display: flex; flex-direction: row; align-items: center">
-          <a class="nav__item" href="">Home</a>
-          <a class="nav__item" href="">Curriculum Vitae</a>
-          <a class="nav__item" href="">Data</a>
-            <img
-              alt="profile_picture"
-              class="profile-picture ml-2"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkdPUrvq_PqcJ6xThm45NFBRnGYPElU28gAw&usqp=CAU"
-              height="30"
-              width="30"
-              style="border-radius: 100%" />
-            <div class="dropdown">
-              <div class="dropdown-content">
-                <a href="#" class="dropdown__item">Profile</a>
-                <a href="#" class="dropdown__item">Log Out</a>
-              </div>
+          <span class="flex__row">
+              <img src="assets/image/logo.svg" alt="assets_logo" style="padding-right: 10px" />
+              <span>SIMAPRES</span>
+          </span>
+  
+          <ul style="display: flex; flex-direction: row; align-items: center; list-style: none; padding: 0; margin: 0;">
+              <li class="nav__item"><a href="" aria-current="true">Home</a></li>
+              <li class="nav__item"><a href="">Curriculum Vitae</a></li>
+              <li class="nav__item"><a href="">Data</a></li>
+              <div class="dropdown-container">
+                <button>
+                    <img
+                        alt="profile_picture"
+                        class="profile-picture ml-2"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkdPUrvq_PqcJ6xThm45NFBRnGYPElU28gAw&usqp=CAU"
+                        height="30"
+                        width="30"
+                    />
+                </button>
+                <div class="dropdown-content">
+                    <a href="loginform.html" class="dropdown__item">Log in</a>
+                    <a href="#" class="dropdown__item">Log Out</a>
+                </div>
             </div>
-          </a>
-        </ul>
+            
+                  
+               
+          </ul>
+  
       </nav>
-    </header>
+  </header>
+  
 
     <main style="background-color: #263a59;">
 
@@ -379,9 +383,9 @@
         margin-top: 290px;
         ">
           
-        <div class="hero-img z-1" style="position: relative; ">
+        <div class="hero-img z-1 mt-0">
           <img src="assets/image/shadowhero.png" alt="Shadow Hero" >
-          <img src="assets/image/hero.png" alt="Hero" style="position: absolute; top: 20px; left: 20px; z-index: 2;">
+          <img src="assets/image/hero.png" alt="Hero" style="position: absolute; top: 28px; left: 28px; z-index: 2;">
         </div>
         <div class="hero-content" style=" width: 400px; ">
           <h1 style="font-size: 50px; font-weight: 800; font-family: monospace; color: #FFC857;">SIMAPRES</h1>
@@ -393,7 +397,7 @@
       <!-- hero section end -->
       
       <!-- analytics section start -->
-      <section class="bg-bgmain">
+      <section class="bg-bgmain mt-16">
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
             <div class=" text-center mx-auto max-w-screen-md mb-8 lg:mb-16">
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-main"><span>Analytics</span></h2>
@@ -411,7 +415,7 @@
                         Perkembangan Prestasi Vokasi Pada 1 Bulan terakhir sesuai data yang diberikan pada tahun ini
                     </h3>
                     <div class="flex justify-center items-center mb-4 w-16 h-16 rounded-full bg-primary-100 lg:h-20 lg:w-20 dark:bg-primary-900">
-                        <h3 class="flex inline   text-4xl font-bold text-white whitespace-nowrap">
+                        <h3 class="inline text-4xl font-bold text-white whitespace-nowrap">
                             + 13 %
                         </h3>
                     </div>
@@ -439,7 +443,7 @@
               <h3 class="mb-2 text-xl text-center font-bold text-white">
                   Dari Data yang masuk, Mahasiswa menyumbang prestasi semakin banyak pada tahun ini
               </h3>
-              <h3 class="flex inline mb-2 p-3 text-4xl font-bold text-white whitespace-nowrap">
+              <h3 class="inline mb-2 p-3 text-4xl font-bold text-white whitespace-nowrap">
                 + 234
             </h3>
               <button class="bg-amber-300   py-2 px-5 md:py-3 md:px-8 lg:py-4 lg:px-10 rounded-full mt-5 hover:bg-blue-600 text-black font-bold whitespace-nowrap">
@@ -458,7 +462,7 @@
             <h3 class="mb-2 text-xl text-center font-bold text-white">
                 Dari Data yang masuk, Mahasiswa menyumbang prestasi semakin banyak pada tahun ini
             </h3>
-            <h3 class="flex inline mb-2 p-3 text-4xl font-bold text-white whitespace-nowrap">
+            <h3 class="inline mb-2 p-3 text-4xl font-bold text-white whitespace-nowrap">
               19 +
           </h3>
             <button class="bg-amber-300   py-2 px-5 md:py-3 md:px-8 lg:py-4 lg:px-10 rounded-full mt-5 hover:bg-blue-600 text-black font-bold whitespace-nowrap">
@@ -467,12 +471,14 @@
         </div>
       </div>
 
-      <div class="flex flex-col mt-7 items-center">
+      <div class="flex flex-col mt-16 items-center">
+        <a href="#">
         <button class="flex items-center">
-          <svg class="w-12 h-12 bg-black p-1 rounded-full text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
+          <svg class="w-16 h-16 bg-black p-1 rounded-full text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13V1m0 0L1 5m4-4 4 4"/>
           </svg>
         </button>
+      </a>
       </div>
       </section>
       <!-- analytics section end -->
@@ -480,5 +486,8 @@
     <footer>
       <div>&copy; Copyright 2023 - PROJECT BASE LEARNING</div>
     </footer>
+
+    <script src="js/script.js"></script>
+
   </body>
 </html>
