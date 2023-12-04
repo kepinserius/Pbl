@@ -11,12 +11,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
       <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"  rel="stylesheet" />
+      <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css" />
       <script src="https://cdn.tailwindcss.com"></script>
       <script src="js/script.js"></script>
     <title>Selamat Datang</title>
   </head>
   <body>
-    <header class="w-full fixed left-0 z-10">
+    <header class="w-full fixed left-0 z-50 top-0">
       <nav class="nav__container">
           <span class="flex__row">
               <img src="assets/image/logo.svg" alt="assets_logo" style="padding-right: 10px" />
@@ -54,20 +55,51 @@
     <main style="background-color: #263a59;">
 
       <!-- hero -->
-      <section id="hero" class="hero__section">
-        <span style="margin-right: 40px">
-          <img src="assets/image/prev.svg" alt="assets_hero" />
-        </span>
-        <div id="img">
-          <img
-            src="assets/image/banner.jpeg"
-            style="width: 80vw; height: 65vh"
-            alt="1" />
-        </div>
-        <span style="margin-left: 40px">
-          <img src="assets/image/next.svg" alt="assets_next" />
-        </span>
-      </section>
+      
+
+<div id="controls-carousel" class=" w-full mt-20  " data-carousel="static">
+  <!-- Carousel wrapper -->
+  <div class=" relative h-56 overflow-hidden rounded-lg md:h-96">
+       <!-- Item 1 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="assets/image/banner.jpeg" class="  absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 2 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+          <img src="assets/image/banner.jpeg" class="  absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 3 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="assets/image/banner.jpeg" class="   absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 4 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="assets/image/banner.jpeg" class="   absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 5 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="assets/image/banner.jpeg" class="absolute   block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+  </div>
+  <!-- Slider controls -->
+  <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+          </svg>
+          <span class="sr-only">Previous</span>
+      </span>
+  </button>
+  <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="sr-only">Next</span>
+      </span>
+  </button>
+</div>
+
       <!-- end hero -->
 
       <!-- news -->
@@ -419,21 +451,13 @@
                             + 13 %
                         </h3>
                     </div>
+                    <a href="analytics.html">
                     <button class="bg-amber-300 py-2 px-5 md:py-3 md:px-8 lg:py-4 lg:px-10 rounded-full mt-2 hover:bg-blue-600 text-black font-bold whitespace-nowrap">
                         Learn More
                     </button>
+                  </a>
                 </div>
             </div>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             <div class="flex flex-col items-center mb-4 p-5 border-[4px] rounded-xl">
               <div class="flex justify-center items-center mb-4 w-16 h-16 rounded-full bg-primary-100 lg:h-20 lg:w-20 dark:bg-primary-900">
                   <svg class="w-12 h-12 text-primary-600 lg:w-16 lg:h-16 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -446,9 +470,11 @@
               <h3 class="inline mb-2 p-3 text-4xl font-bold text-white whitespace-nowrap">
                 + 234
             </h3>
+            <a href="analytics.html">
               <button class="bg-amber-300   py-2 px-5 md:py-3 md:px-8 lg:py-4 lg:px-10 rounded-full mt-5 hover:bg-blue-600 text-black font-bold whitespace-nowrap">
                 Learn More
             </button>
+          </a>
           </div>
           
           
@@ -465,14 +491,16 @@
             <h3 class="inline mb-2 p-3 text-4xl font-bold text-white whitespace-nowrap">
               19 +
           </h3>
+          <a href="analytics.html">
             <button class="bg-amber-300   py-2 px-5 md:py-3 md:px-8 lg:py-4 lg:px-10 rounded-full mt-5 hover:bg-blue-600 text-black font-bold whitespace-nowrap">
               Learn More
           </button>
+        </a>
         </div>
       </div>
 
       <div class="flex flex-col mt-16 items-center">
-        <a href="#">
+        <a href="#" class="">
         <button class="flex items-center">
           <svg class="w-16 h-16 bg-black p-1 rounded-full text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13V1m0 0L1 5m4-4 4 4"/>
@@ -488,6 +516,6 @@
     </footer>
 
     <script src="js/script.js"></script>
-
+    <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
   </body>
 </html>
