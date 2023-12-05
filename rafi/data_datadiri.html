@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body style="background-color: #263a59">
+    <header>
+      <nav class="nav__container">
+        <span class="flex__row">
+          <img src="./assets/logo.svg" style="padding-right: 10px" />
+          <span>Data Lomba</span>
+        </span>
+
+        <ul style="display: flex; flex-direction: row; align-items: center">
+          <a class="nav__item" href="">Home</a>
+          <a class="nav__item" href="">Curriculum Vitae</a>
+          <a class="nav__item" href="./data_datadiri.html">Data</a>
+          <a class="nav__item" href="">
+            <img
+              class="profile-picture"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkdPUrvq_PqcJ6xThm45NFBRnGYPElU28gAw&usqp=CAU"
+              height="30"
+              width="30"
+              style="border-radius: 100%"
+            />
+            <div class="dropdown">
+              <div class="dropdown-content">
+                <a href="#" class="dropdown__item">Profile</a>
+                <a href="#" class="dropdown__item">Log Out</a>
+              </div>
+            </div>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <main style="display: flex; justify-content: center">
+      <section class="main__container">
+        <div
+          class="forms"
+          style="border-radius: 10px 0 10px 10px; padding: 0; overflow: hidden"
+        >
+          <div class="container__input__data">
+            <div class="navigator__form__section">
+              <div style="border-width: 1px; border-color: black">
+                <div
+                  style="
+                    padding: 10px 40px;
+                    background-color: #ffc857;
+                    border-bottom-color: black;
+                    border-bottom-width: 1px;
+                    text-align: center;
+                  "
+                >
+                  <h3>Testing Name</h3>
+                </div>
+                <div style="padding: 20px">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkdPUrvq_PqcJ6xThm45NFBRnGYPElU28gAw&usqp=CAU"
+                    alt="profile"
+                  />
+                </div>
+              </div>
+              <div
+                id="#nav__container"
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  border-width: 1px;
+                  border-color: black;
+                  margin-left: 10px;
+                  width: 35%;
+                "
+              >
+                <a
+                  style="
+                    padding: 10px 20px;
+                    border-bottom-color: black;
+                    border-bottom-width: 1px;
+                    width: 100%;
+                    text-align: center;
+                  "
+                  href=""
+                >
+                  Data Diri
+                </a>
+                <a
+                  style="
+                    padding: 10px 20px;
+                    border-bottom-color: black;
+                    border-bottom-width: 1px;
+                    width: 100%;
+                    text-align: center;
+                  "
+                  href="./data_datalomba.html"
+                >
+                  Lomba
+                </a>
+                <a
+                  style="
+                    padding: 10px 20px;
+                    border-bottom-color: black;
+                    border-bottom-width: 1px;
+                    width: 100%;
+                    text-align: center;
+                  "
+                  href="./data_dokumen.html"
+                >
+                  Dokumen
+                </a>
+              </div>
+            </div>
+            <div class="form__section">
+              <h1>Data Diri</h1>
+              <form action="">
+                <div class="input-custom">
+                  <label for="">Nama Lengkap</label>
+                  <input
+                    type="text"
+                    placeholder="test"
+                    style="background-color: white"
+                  />
+                </div>
+                <div class="input-custom">
+                  <label for="">Prodi</label>
+                  <input
+                    type="text"
+                    placeholder="test"
+                    style="background-color: white"
+                  />
+                </div>
+                <div class="input-custom">
+                  <label for="">NIM</label>
+                  <input
+                    type="text"
+                    placeholder="test"
+                    style="background-color: white"
+                  />
+                </div>
+                <div class="input-custom">
+                  <label for="">Angkatan</label>
+                  <input
+                    type="text"
+                    placeholder="test"
+                    style="background-color: white"
+                  />
+                </div>
+                <div class="input-custom">
+                  <label for="">No. Handphone</label>
+                  <input
+                    type="text"
+                    placeholder="test"
+                    style="background-color: white"
+                  />
+                </div>
+                <div class="input-custom">
+                  <label for="">Alamat email</label>
+                  <input
+                    type="text"
+                    placeholder="test"
+                    style="background-color: white"
+                  />
+                </div>
+              </form>
+              <hr />
+              <div
+                style="
+                  width: 100%;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: end;
+                  margin-top: 10px;
+                "
+              >
+                <a
+                  style="
+                    padding: 5px 20px;
+                    background-color: white;
+                    border-radius: 5px;
+                    font-family: 'Poppins';
+                    font-weight: 500;
+                    cursor: pointer;
+                  "
+                  >Save</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav__container {
+  @apply flex flex-row justify-between items-center p-4 bg-white shadow-sm sticky top-0;
+}
+
+.flex__row {
+  @apply flex flex-row items-center;
+}
+
+.nav__item {
+  @apply px-4;
+}
+
+.hero__section {
+  @apply flex flex-row justify-center items-center bg-main w-[100vw];
+}
+
+.news_section {
+  @apply flex flex-row;
+}
+
+.news__left {
+  @apply flex flex-col w-[45vw];
+}
+
+.news__right {
+  @apply w-[35vw];
+}
+
+.news__title {
+  @apply text-2xl font-bold mt-1 text-white;
+}
+
+.news__puplished {
+  @apply text-sm font-light italic text-white;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  min-width: 120px;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown button {
+  @apply text-black px-4 py-2 h-full border-l border-l-black;
+}
+
+.dropdown__item {
+  @apply block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white transition;
+}
+
+.news__bottom {
+  @apply grid grid-rows-6 gap-6 grid-flow-col;
+}
+
+footer {
+  @apply p-10 bg-main flex justify-center items-center;
+}
+
+footer div {
+  @apply w-[80vw] font-semibold;
+}
+
+.img-right {
+  @apply w-[100px] h-[60px] rounded-md md:w-[130px] md:h-[90px] xl:w-[200px] xl:h-[150px];
+}
+
+.main__container {
+  @apply w-[90vw] p-6 flex justify-center items-center flex-col;
+}
+
+.profile {
+  @apply flex flex-col justify-center items-center;
+}
+
+.profile h2 {
+  @apply mt-3 font-semibold text-lg font-Poppins text-white;
+}
+
+.profile button {
+  @apply bg-white px-4 py-1 cursor-pointer rounded-md text-black mt-3 font-Poppins;
+}
+
+.forms {
+  @apply bg-white w-full mt-12 rounded-md p-3;
+}
+
+.forms nav {
+  @apply flex flex-row justify-center items-center w-full border-b border-b-black;
+}
+
+.forms nav a {
+  @apply px-6 font-Poppins py-2 font-medium hover:bg-main hover:text-white;
+}
+
+.forms button {
+  @apply mt-4 p-2 bg-main w-full rounded-md font-medium;
+}
+
+.forms form {
+  @apply grid grid-cols-2 gap-4 mt-4 mb-4;
+}
+
+.forms form .input-custom {
+  @apply flex flex-col;
+}
+
+.forms form .input-custom input {
+  @apply bg-slate-300 p-2 rounded-md mt-2 outline-none;
+}
+
+.forms form .input-custom label {
+  @apply font-Poppins text-sm;
+}
+
+.forms table {
+  @apply w-full mt-6 table-fixed;
+}
+
+.form table tr .id {
+  @apply w-1/6;
+}
+
+.form table tr .half {
+  @apply w-2/6;
+}
+
+.borders {
+  @apply border border-black;
+}
+
+.form .head {
+  @apply bg-main;
+}
+
+.table-content-center {
+  @apply text-center;
+}
+
+.container__input__data {
+  @apply grid grid-cols-2 w-full;
+}
+
+.container__input__data .form__section {
+  @apply w-full p-3 flex flex-col bg-main font-Poppins;
+}
+
+.container__input__data .form__section h1 {
+  @apply font-medium text-lg;
+}
+
+.container__input__data .form__section hr {
+  @apply divide-y divide-black;
+}
+
+.container__input__data .navigator__form__section {
+  @apply flex flex-row justify-center w-full p-6;
+}
+
+#nav__container a:hover {
+  @apply bg-main;
+}
+
+.container__input__data .form__section__grid {
+  @apply grid grid-cols-2 bg-main font-Poppins;
+}
+
+.item__input__document {
+  @apply flex flex-row justify-center items-center p-5 border border-black my-4 bg-white w-[100%];
+}
+
+.container__save__document {
+  @apply flex flex-col justify-center items-center ml-4;
+}
