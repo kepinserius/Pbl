@@ -29,7 +29,6 @@ header span{
     border-radius: 50px;
     position: absolute;
     z-index: 30;
-    background: #5372F0;
 }
 
 .signin-image{
@@ -53,7 +52,6 @@ header span{
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     text-align: center;
-    box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
 }
 .wrapper header{
     font-size: 35px;
@@ -262,4 +260,6 @@ form input[type="button"]:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     z-index: 999;
   }
+
+  
   
