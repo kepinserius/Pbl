@@ -6,19 +6,17 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="assets/styles/loginform.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
 </head>
 <body>
 <div class="container-signin">
-    <div class="signin-image">
-        <img src="assets/image/banner.jpeg" alt="">
-    </div>
-    <div class="wrapper">
+    <div class="wrapper" style="border-bottom-left-radius: 30px; border-top-left-radius: 30px; border-top-right-radius: 0; border-bottom-right-radius: 0;">
         <img src="assets/image/logo.svg" alt="vokasi">
         <header>Welcome, <span>JUARA</span></header>
         <form action="#">
             <div class="field email">
                 <div class="input-area">
-                    <input type="text" placeholder="Email UB">
+                    <input type="email" placeholder="Email UB">
                     <i class="icon fas fa-envelope"></i>
                     <i class="error error-icon fas fa-exclamation-circle"></i>
                 </div>
@@ -27,13 +25,15 @@
             <div class="field password">
                 <div class="input-area">
                     <input type="number" placeholder="NIM">
-                    <i class="icon fas fa-lock"></i>
-                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                    <i class="icon fas fa-lock"></i>            
                 </div>
                 <div class="error error-txt">Password can't be blank</div>
             </div>
             <input type="submit" value="Signup">
         </form>
+    </div>
+    <div class="signin-image" style="border-top-right-radius: 30px; border-bottom-right-radius: 30px; border-bottom-left-radius: 0; border-top-left-radius: 0;">
+        <img src="assets/image/banner.jpeg" alt="">
     </div>
 </div>
 <script src="script.js"></script>

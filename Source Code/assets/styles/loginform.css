@@ -22,15 +22,18 @@ header span{
 
 ::selection{
     color: #fff;
-    background: #5372F0;
 }
 .container-signin{
     display: flex;
     flex-direction: row;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 30;
+    background: #5372F0;
 }
 
 .signin-image{
-    width: 680px;
+    width: 580px;
     overflow: hidden;
     border-bottom-left-radius: 30px;
     border-top-left-radius: 30px;
@@ -43,10 +46,10 @@ header span{
 }
  
 .wrapper{
-    width: 380px;
+    width: 480px;
     height: 570px;
     padding: 40px 30px 50px 30px;
-    background: #fff;
+    background: #263A59;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     text-align: center;
@@ -88,9 +91,9 @@ form input{
     outline: none;
     padding: 0 45px;
     font-size: 18px;
-    background: none;
+    background: white;
     caret-color: #5372F0;
-    border-radius: 5px;
+    border-radius: 30px;
     border: 1px solid #bfbfbf;
     border-bottom-width: 2px;
     transition: all 0.2s ease;
@@ -157,16 +160,35 @@ form .pass-txt{
 form input[type="submit"]{
     height: 50px;
     margin-top: 30px;
-    color: #fff;
+    color: #ECAA2D ;
     padding: 0;
-    border: none;
-    background: #5372F0;
+    border: solid 5px #ECAA2D;
+    border-radius: 30px;
     cursor: pointer;
-    border-bottom: 2px solid rgba(0,0,0,0.1);
     transition: all 0.3s ease;
+    font-weight: bold;
 }
 form input[type="submit"]:hover{
-    background: #2c52ed;
+    background: #ECAA2D ;
+    color: black;
+    font-weight: bold;
+}
+
+form input[type="button"]{
+    height: 50px;
+    margin-top: 20px;
+    color: #ECAA2D ;
+    padding: 0;
+    border: solid 5px #ECAA2D;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+form input[type="button"]:hover{
+    background: #ECAA2D ;
+    color: black;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {

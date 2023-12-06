@@ -17,18 +17,18 @@
     <title>Selamat Datang</title>
   </head>
   <body>
-    <header class="w-full fixed left-0 z-50 top-0">
-      <nav class="nav__container">
+    <header class="w-full fixed left-0 z-50 top-0 ">
+      <nav class="nav__container " style="background-color: #4D7DF0;">
           <span class="flex__row">
               <img src="assets/image/logo.svg" alt="assets_logo" style="padding-right: 10px" />
-              <span>SIMAPRES</span>
+              <span class="font-bold text-xl text-black">SIMAPRES</span>
           </span>
   
           <ul style="display: flex; flex-direction: row; align-items: center; list-style: none; padding: 0; margin: 0;">
               <li class="nav__item"><a href="" aria-current="true">Home</a></li>
               <li class="nav__item"><a href="">Curriculum Vitae</a></li>
               <li class="nav__item"><a href="">Data</a></li>
-              <div class="dropdown-container">
+              <div class="dropdown-container my-auto">
                 <button>
                     <img
                         alt="profile_picture"
@@ -52,14 +52,15 @@
   </header>
   
 
-    <main style="background-color: #263a59;">
+    <main style="background-color: #263a59; padding-top: 50px;">
 
       <!-- hero -->
       
 
       <div id="default-carousel" class="relative w-full" data-carousel="slide">
         <!-- Carousel wrapper -->
-        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <div class="bg-amber-300">
+        <div class="relative w-3/4 mx-auto h-56 overflow-hidden md:h-96">
              <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="assets/image/banner.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
@@ -81,6 +82,7 @@
                 <img src="assets/image/banner.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
         </div>
+      </div>
         <!-- Slider indicators -->
         <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
             <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
@@ -92,7 +94,7 @@
         <!-- Slider controls -->
         <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
             <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <svg class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
                 </svg>
                 <span class="sr-only">Previous</span>
@@ -100,7 +102,7 @@
         </button>
         <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
             <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <svg class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
                 </svg>
                 <span class="sr-only">Next</span>
@@ -418,55 +420,56 @@
       <!-- end news -->
 
       <!-- hero section start -->
-      <div class="container-hero" 
+      <div class="container-hero ml-10" 
         style="display: flex;
         margin-top: 290px;
+        padding-top: 0px;
         ">
           
         <div class="hero-img z-1 mt-0">
           <img src="assets/image/shadowhero.png" alt="Shadow Hero" >
           <img src="assets/image/hero.png" alt="Hero" style="position: absolute; top: 28px; left: 28px; z-index: 2;">
         </div>
-        <div class="hero-content" style=" width: 400px; ">
-          <h1 style="font-size: 50px; font-weight: 800; font-family: monospace; color: #FFC857;">SIMAPRES</h1>
+        <div class="hero-content mt-10" style=" width: 400px; ">
+          <h1 style="font-size: 50px; font-weight: 500; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: #FFC857;">SIMAPRES</h1>
           <h1 style="font-size: 30px; font-weight: 500; color: white;">Lets Start youre Future with US</h1>
           <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolorem ex nam id nihil! Voluptatum odio eos temporibus perspiciatis accusantium nulla, cum, eligendi pariatur optio, expedita sapiente tempora. Illo, voluptate?</p>
-          <button style="background-color: #4D7DF0; padding: 7px 20px 10px 20px; border-radius: 30px; margin-top: 20px">learn more</button>
+          <button style=" padding: 7px 20px 10px 20px; border-radius: 30px; margin-top: 20px" class="bg-blue-500 hover:bg-blue-600">learn more</button>
         </div>
         </div>
       <!-- hero section end -->
       
       <!-- analytics section start -->
-      <section class="bg-bgmain mt-16">
+      <section class="bg-bgmain mt-32">
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
             <div class=" text-center mx-auto max-w-screen-md mb-8 lg:mb-16">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-main"><span>Analytics</span></h2>
+                <h2 class="mb-4 text-5xl tracking-tight font-bold text-main"><span style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Analytics</span></h2>
                 <p class="text-white sm:text-xl dark:text-gray-400">Our Analytics on SIMAPRES for few Years</p>
             </div>
             <div class="space-y-8 md:grid md:grid-cols-2 mb-15 lg:grid-cols-3 md:gap-12 md:space-y-0">
-              <div class="flex flex-col items-center mb-4 p-5 border-[4px] rounded-xl text-center">
-                <div class="flex justify-center items-center mb-4 w-16 h-16 rounded-full bg-primary-100 lg:h-20 lg:w-20 dark:bg-primary-900">
+              <div class="flex flex-col items-center mb-4 p-5 border-[4px] rounded-xl" style="height: 400px;">
+                <div class="flex justify-center mb-4 w-16 h-16 items-center rounded-full bg-primary-100 lg:h-20 lg:w-20 dark:bg-primary-900">
                     <svg class="w-12 h-12 text-primary-600 lg:w-16 lg:h-16 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                     </svg>
                 </div>
-                <div class="flex flex-col items-center">
-                    <h3 class="mb-2 text-xl font-bold text-white">
+                 
+                    <h3 class="mb-2 text-xl text-center font-bold text-white">
                         Perkembangan Prestasi Vokasi Pada 1 Bulan terakhir sesuai data yang diberikan pada tahun ini
                     </h3>
-                    <div class="flex justify-center items-center mb-4 w-16 h-16 rounded-full bg-primary-100 lg:h-20 lg:w-20 dark:bg-primary-900">
-                        <h3 class="inline text-4xl font-bold text-white whitespace-nowrap">
+                     
+                        <h3 class="inline mt-1 mb-4 p-3 text-4xl font-bold text-white whitespace-nowrap">
                             + 13 %
                         </h3>
-                    </div>
+                     
                     <a href="analytics.html">
-                    <button class="bg-amber-300 py-2 px-5 md:py-3 md:px-8 lg:py-4 lg:px-10 rounded-full mt-2 hover:bg-blue-600 text-black font-bold whitespace-nowrap">
+                    <button class=" kolomfirst bg-amber-300 mb-2 py-2 px-5 md:py-3 md:px-8 lg:py-4 lg:px-10 rounded-full mt-2 hover:bg-amber-400 text-black font-bold whitespace-nowrap">
                         Learn More
                     </button>
                   </a>
-                </div>
+                 
             </div>
-            <div class="flex flex-col items-center mb-4 p-5 border-[4px] rounded-xl">
+            <div class="flex flex-col items-center mb-4 p-5 border-[4px] rounded-xl" style="height: 400px;">
               <div class="flex justify-center items-center mb-4 w-16 h-16 rounded-full bg-primary-100 lg:h-20 lg:w-20 dark:bg-primary-900">
                   <svg class="w-12 h-12 text-primary-600 lg:w-16 lg:h-16 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
@@ -479,14 +482,14 @@
                 + 234
             </h3>
             <a href="analytics.html">
-              <button class="bg-amber-300   py-2 px-5 md:py-3 md:px-8 lg:py-4 lg:px-10 rounded-full mt-5 hover:bg-blue-600 text-black font-bold whitespace-nowrap">
+              <button class="bg-amber-300   py-2 px-5 md:py-3 md:px-8 lg:py-4 lg:px-10 rounded-full mt-5 hover:bg-amber-400 text-black font-bold whitespace-nowrap">
                 Learn More
             </button>
           </a>
           </div>
           
           
-          <div class="flex flex-col items-center mb-4 p-5 border-[4px] rounded-xl">
+          <div class="flex flex-col items-center mb-4 p-5 border-[4px] rounded-xl" style="height: 400px;">
             <div class="flex justify-center items-center mb-4 w-16 h-16 rounded-full bg-primary-100 lg:h-20 lg:w-20 dark:bg-primary-900">
                 <svg class="w-12 h-12 text-primary-600 lg:w-16 lg:h-16 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path>
@@ -500,7 +503,7 @@
               19 +
           </h3>
           <a href="analytics.html">
-            <button class="bg-amber-300   py-2 px-5 md:py-3 md:px-8 lg:py-4 lg:px-10 rounded-full mt-5 hover:bg-blue-600 text-black font-bold whitespace-nowrap">
+            <button class="bg-amber-300   py-2 px-5 md:py-3 md:px-8 lg:py-4 lg:px-10 rounded-full mt-5 hover:bg-amber-400 text-black font-bold whitespace-nowrap">
               Learn More
           </button>
         </a>
