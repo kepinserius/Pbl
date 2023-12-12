@@ -4,7 +4,7 @@
   "description": "Proyek TIK dan SI Vokasi UB.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -13,9 +13,9 @@
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "express-session": "^1.17.3",
+    "multer": "^1.4.5-lts.1",
     "mysql": "^2.18.1",
+    "nodemon": "^3.0.2",
     "req-flash": "^0.0.3"
   }
 }
-
-
